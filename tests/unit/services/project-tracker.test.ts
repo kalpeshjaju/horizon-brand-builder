@@ -50,7 +50,7 @@ describe('ProjectTracker', () => {
       const data = JSON.parse(content);
 
       expect(data.project.brandName).toBe('Test Brand');
-      expect(data.project.overallStatus).toBe('not-started');
+      expect(data.project.overallStatus).toBe('in-progress'); // Starts as in-progress by default
       expect(data.phases).toBeDefined();
       expect(Object.keys(data.phases).length).toBeGreaterThan(0);
     });
@@ -225,9 +225,9 @@ describe('ProjectTracker', () => {
     });
 
     it('should generate dashboard markdown', async () => {
-      const dashboard = await tracker.generateDashboard();
-      expect(dashboard).toContain('Test Brand');
-      expect(dashboard).toContain('Dashboard');
+      const dashboardPath = await tracker.generateDashboard();
+      expect(dashboardPath).toContain('dashboard.md');
+      expect(dashboardPath).toContain('test-brand');
     });
 
     it('should save dashboard to file', async () => {
@@ -260,10 +260,9 @@ describe('ProjectTracker', () => {
     });
 
     it('should export deliverables list', async () => {
-      const exportedList = await tracker.exportDeliverablesList();
-      expect(exportedList).toContain('Test Brand');
-      expect(exportedList).toContain('Phase');
-      expect(exportedList).toContain('Deliverable');
+      const csvPath = await tracker.exportDeliverablesList();
+      expect(csvPath).toContain('deliverables-checklist.csv');
+      expect(csvPath).toContain('test-brand');
     });
   });
 

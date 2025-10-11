@@ -2,7 +2,7 @@
   "project": {
     "name": "My Test Brand Brand Transformation",
     "brandName": "My Test Brand",
-    "startDate": "2025-10-11T04:45:00.062Z",
+    "startDate": "2025-10-11T04:56:57.036Z",
     "totalDuration": "16 weeks",
     "currentPhase": "phase1",
     "overallStatus": "in-progress"
@@ -13,7 +13,7 @@
       "name": "Brand Strategy & Positioning",
       "duration": "3 weeks",
       "status": "in-progress",
-      "startDate": "2025-10-11T04:45:00.062Z",
+      "startDate": "2025-10-11T04:56:57.036Z",
       "endDate": null,
       "deliverables": [
         {
@@ -418,8 +418,8 @@
   },
   "metrics": {
     "timeline": {
-      "plannedStartDate": "2025-10-11T04:45:00.062Z",
-      "actualStartDate": "2025-10-11T04:45:00.062Z",
+      "plannedStartDate": "2025-10-11T04:56:57.036Z",
+      "actualStartDate": "2025-10-11T04:56:57.036Z",
       "plannedEndDate": null,
       "actualEndDate": null,
       "daysElapsed": 0
@@ -438,5 +438,5 @@
       "notStarted": 4
     }
   },
-  "lastUpdated": "2025-10-11T04:45:00.062Z"
+  "lastUpdated": "2025-10-11T04:56:57.036Z"
 }

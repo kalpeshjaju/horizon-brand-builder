@@ -140,16 +140,18 @@ Output Format: JSON
       proofPoints: string[];
     };
 
-    // Validate proof points with sources
+    // Validate proof points with sources (only if they exist)
     console.log('\n🔍 Validating proof points with sources...\n');
-    const validationResult = await this.proofPointValidator.validateProofPoints(
-      positioning.proofPoints,
-      {
-        brandName: profile.brandName,
-        industry: profile.industry || 'Consumer Goods',
-        category: profile.brandType || 'General',
-      }
-    );
+    const validationResult = positioning.proofPoints && positioning.proofPoints.length > 0
+      ? await this.proofPointValidator.validateProofPoints(
+          positioning.proofPoints,
+          {
+            brandName: profile.brandName,
+            industry: profile.brandName || 'Consumer Goods',
+            category: profile.brandType || 'General',
+          }
+        )
+      : { validatedPoints: [], invalidPoints: [] };
 
     // If some proof points are invalid, generate alternatives
     if (validationResult.invalidPoints.length > 0) {
