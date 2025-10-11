@@ -1,6 +1,8 @@
 // Web Research Service - Fetch real market data
-// Version 2.0 - Google Custom Search API Integration
+// Version 2.1 - Enhanced caching with persistence and TTL
 
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import { join, dirname } from 'path';
 import type {
   IndustryResearchData,
   CompetitorWebData,
@@ -14,6 +16,9 @@ interface GoogleSearchConfig {
   apiKey?: string;
   searchEngineId?: string;
   enableCache?: boolean;
+  cacheStoragePath?: string;
+  cacheTTL?: number; // milliseconds
+  maxCacheSize?: number; // max entries
 }
 
 interface GoogleSearchResult {
@@ -34,20 +39,52 @@ interface GoogleApiResponse {
   }>;
 }
 
+interface CachedSearchResult {
+  data: GoogleSearchResult[];
+  timestamp: number;
+  ttl: number;
+  version: string; // Cache version for invalidation
+}
+
+interface CacheStats {
+  hits: number;
+  misses: number;
+  size: number;
+  hitRate: number;
+  oldestEntry?: number;
+  newestEntry?: number;
+}
+
 export class WebResearchService {
   private apiKey: string | null;
   private searchEngineId: string | null;
-  private searchCache: Map<string, GoogleSearchResult[]> = new Map();
+  private searchCache: Map<string, CachedSearchResult> = new Map();
+  private cacheStoragePath: string;
+  private cacheTTL: number;
+  private maxCacheSize: number;
+  private enableCache: boolean;
+  private cacheVersion = 'v2.1'; // Increment to invalidate old cache
+  private stats: Omit<CacheStats, 'size' | 'hitRate' | 'oldestEntry' | 'newestEntry'> = {
+    hits: 0,
+    misses: 0,
+  };
 
   constructor(config?: GoogleSearchConfig) {
     this.apiKey = config?.apiKey || process.env.GOOGLE_API_KEY || null;
     this.searchEngineId = config?.searchEngineId || process.env.GOOGLE_SEARCH_ENGINE_ID || null;
+    this.enableCache = config?.enableCache ?? true;
+    this.cacheStoragePath = config?.cacheStoragePath || './data/web-search-cache.json';
+    this.cacheTTL = config?.cacheTTL || 24 * 60 * 60 * 1000; // 24 hours default
+    this.maxCacheSize = config?.maxCacheSize || 1000; // 1000 entries max
 
     if (!this.apiKey || !this.searchEngineId) {
       console.warn('⚠️  Google Custom Search API not configured');
       console.warn('   Set GOOGLE_API_KEY and GOOGLE_SEARCH_ENGINE_ID for real web search');
       console.warn('   Get credentials at: https://developers.google.com/custom-search');
     }
+
+    // Load cache from disk
+    this.loadCacheFromDisk();
   }
 
   async fetchIndustryData(industry: string, region: string = 'India'): Promise<IndustryResearchData> {
@@ -174,6 +211,147 @@ export class WebResearchService {
   }
 
   /**
+   * Load cache from disk
+   */
+  private loadCacheFromDisk(): void {
+    if (!this.enableCache) return;
+
+    try {
+      if (existsSync(this.cacheStoragePath)) {
+        const data = readFileSync(this.cacheStoragePath, 'utf-8');
+        const parsed = JSON.parse(data);
+
+        // Only load if versions match
+        if (parsed.version === this.cacheVersion) {
+          const entries = Object.entries(parsed.cache || {}) as Array<[string, CachedSearchResult]>;
+          this.searchCache = new Map(entries);
+
+          // Remove expired entries
+          this.pruneExpiredEntries();
+
+          console.log(`✅ Loaded ${this.searchCache.size} cached search results from disk`);
+        } else {
+          console.log(`⚠️  Cache version mismatch (${parsed.version} vs ${this.cacheVersion}), starting fresh`);
+        }
+      }
+    } catch (error: any) {
+      console.warn(`⚠️  Failed to load cache from disk: ${error.message}`);
+    }
+  }
+
+  /**
+   * Save cache to disk
+   */
+  private async saveCacheToDisk(): Promise<void> {
+    if (!this.enableCache) return;
+
+    try {
+      // Ensure directory exists
+      const dir = dirname(this.cacheStoragePath);
+      if (!existsSync(dir)) {
+        mkdirSync(dir, { recursive: true });
+      }
+
+      const cacheData = {
+        version: this.cacheVersion,
+        savedAt: new Date().toISOString(),
+        cache: Object.fromEntries(this.searchCache),
+      };
+
+      writeFileSync(this.cacheStoragePath, JSON.stringify(cacheData, null, 2), 'utf-8');
+    } catch (error: any) {
+      console.warn(`⚠️  Failed to save cache to disk: ${error.message}`);
+    }
+  }
+
+  /**
+   * Get cached result if valid
+   */
+  private getCachedResult(key: string): GoogleSearchResult[] | null {
+    if (!this.enableCache) return null;
+
+    const cached = this.searchCache.get(key);
+    if (!cached) {
+      this.stats.misses++;
+      return null;
+    }
+
+    // Check if expired
+    if (Date.now() - cached.timestamp > cached.ttl) {
+      this.searchCache.delete(key);
+      this.stats.misses++;
+      return null;
+    }
+
+    // Check version match
+    if (cached.version !== this.cacheVersion) {
+      this.searchCache.delete(key);
+      this.stats.misses++;
+      return null;
+    }
+
+    this.stats.hits++;
+    return cached.data;
+  }
+
+  /**
+   * Cache search result
+   */
+  private async setCachedResult(key: string, data: GoogleSearchResult[]): Promise<void> {
+    if (!this.enableCache) return;
+
+    // Prune cache if at max size
+    if (this.searchCache.size >= this.maxCacheSize) {
+      this.pruneOldestEntries(Math.floor(this.maxCacheSize * 0.2)); // Remove oldest 20%
+    }
+
+    const cached: CachedSearchResult = {
+      data,
+      timestamp: Date.now(),
+      ttl: this.cacheTTL,
+      version: this.cacheVersion,
+    };
+
+    this.searchCache.set(key, cached);
+
+    // Save to disk asynchronously
+    await this.saveCacheToDisk();
+  }
+
+  /**
+   * Remove expired cache entries
+   */
+  private pruneExpiredEntries(): void {
+    const now = Date.now();
+    const keysToDelete: string[] = [];
+
+    for (const [key, cached] of this.searchCache.entries()) {
+      if (now - cached.timestamp > cached.ttl || cached.version !== this.cacheVersion) {
+        keysToDelete.push(key);
+      }
+    }
+
+    keysToDelete.forEach(key => this.searchCache.delete(key));
+
+    if (keysToDelete.length > 0) {
+      console.log(`🧹 Pruned ${keysToDelete.length} expired cache entries`);
+    }
+  }
+
+  /**
+   * Remove oldest cache entries
+   */
+  private pruneOldestEntries(count: number): void {
+    const entries = Array.from(this.searchCache.entries())
+      .sort((a, b) => a[1].timestamp - b[1].timestamp);
+
+    const toRemove = entries.slice(0, count);
+    toRemove.forEach(([key]) => this.searchCache.delete(key));
+
+    console.log(`🧹 Pruned ${toRemove.length} oldest cache entries (cache size limit reached)`);
+  }
+
+  /**
    * Perform real Google Custom Search API call
    */
   private async performGoogleSearch(query: string, maxResults: number = 10): Promise<GoogleSearchResult[]> {
@@ -183,9 +361,11 @@ export class WebResearchService {
 
     // Check cache first
     const cacheKey = `${query}:${maxResults}`;
-    if (this.searchCache.has(cacheKey)) {
-      console.log(`   💾 Cache hit for: "${query}"`);
-      return this.searchCache.get(cacheKey)!;
+    const cachedResults = this.getCachedResult(cacheKey);
+
+    if (cachedResults) {
+      console.log(`   💾 Cache hit for: "${query}" (${this.stats.hits} hits, ${this.stats.misses} misses)`);
+      return cachedResults;
     }
 
     try {
@@ -212,9 +392,8 @@ export class WebResearchService {
         formattedUrl: item.formattedUrl,
       }));
 
-      // Cache results (1 hour TTL)
-      this.searchCache.set(cacheKey, results);
-      setTimeout(() => this.searchCache.delete(cacheKey), 3600000);
+      // Cache results with persistence
+      await this.setCachedResult(cacheKey, results);
 
       return results;
     } catch (error: any) {
@@ -282,18 +461,29 @@ export class WebResearchService {
   /**
    * Get current search cache stats
    */
-  getCacheStats(): { size: number; queries: string[] } {
+  getCacheStats(): CacheStats {
+    const timestamps = Array.from(this.searchCache.values()).map(c => c.timestamp);
+    const totalRequests = this.stats.hits + this.stats.misses;
+
     return {
+      hits: this.stats.hits,
+      misses: this.stats.misses,
       size: this.searchCache.size,
-      queries: Array.from(this.searchCache.keys()),
+      hitRate: totalRequests > 0 ? this.stats.hits / totalRequests : 0,
+      oldestEntry: timestamps.length > 0 ? Math.min(...timestamps) : undefined,
+      newestEntry: timestamps.length > 0 ? Math.max(...timestamps) : undefined,
     };
   }
 
   /**
    * Clear search cache
    */
-  clearCache(): void {
+  async clearCache(): Promise<void> {
     this.searchCache.clear();
+    this.stats.hits = 0;
+    this.stats.misses = 0;
+    await this.saveCacheToDisk();
+    console.log('✅ Cache cleared');
   }
 
   async batchFetchCompetitors(urls: string[]): Promise<Map<string, CompetitorWebData | null>> {

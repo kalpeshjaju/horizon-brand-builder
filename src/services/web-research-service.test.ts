@@ -224,17 +224,20 @@ describe('WebResearchService', () => {
 
       expect(stats).toBeDefined();
       expect(stats.size).toBe(0);
-      expect(Array.isArray(stats.queries)).toBe(true);
+      expect(stats.hits).toBe(0);
+      expect(stats.misses).toBe(0);
+      expect(stats.hitRate).toBe(0);
     });
   });
 
   describe('clearCache', () => {
-    it('should clear cache', () => {
-      service.clearCache();
+    it('should clear cache', async () => {
+      await service.clearCache();
 
       const stats = service.getCacheStats();
       expect(stats.size).toBe(0);
-      expect(stats.queries.length).toBe(0);
+      expect(stats.hits).toBe(0);
+      expect(stats.misses).toBe(0);
     });
   });
 });
