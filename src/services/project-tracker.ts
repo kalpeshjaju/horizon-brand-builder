@@ -13,6 +13,10 @@ import type {
   Deliverable,
   Phase,
 } from '../types/project-types.js';
+import {
+  generateDashboard,
+  exportDeliverablesList,
+} from './project-tracker-dashboard.js';
 
 export class ProjectTracker {
   private dataFile: string;
@@ -284,125 +288,14 @@ export class ProjectTracker {
     if (!this.data) {
       throw new Error('Project tracker not initialized. Call initialize() first.');
     }
-
-    const brandSlug = this.brandConfig.brandName.toLowerCase().replace(/\s+/g, '-');
-    const outputDir = path.join(process.cwd(), 'output', brandSlug);
-    await fs.mkdir(outputDir, { recursive: true });
-
-    const dashboardFile = path.join(outputDir, 'project-dashboard.md');
-
-    let markdown = `# ${this.brandConfig.brandName} Brand Development - Project Dashboard\n\n`;
-    markdown += `**Last Updated:** ${new Date(this.data.lastUpdated).toLocaleString()}\n`;
-    markdown += `**Days Elapsed:** ${this.data.metrics.timeline.daysElapsed}\n`;
-    markdown += `**Current Phase:** ${this.data.project.currentPhase.toUpperCase()}\n`;
-    markdown += `**Overall Status:** ${this.data.project.overallStatus.toUpperCase()}\n\n`;
-
-    markdown += `---\n\n`;
-
-    // Overall metrics
-    markdown += `## 📊 Overall Progress\n\n`;
-    markdown += `### Deliverables\n`;
-    markdown += `- **Total:** ${this.data.metrics.deliverables.total}\n`;
-    markdown += `- **Completed:** ${this.data.metrics.deliverables.completed} (${this.data.metrics.deliverables.completionRate}%)\n`;
-    markdown += `- **In Progress:** ${this.data.metrics.deliverables.inProgress}\n`;
-    markdown += `- **Not Started:** ${this.data.metrics.deliverables.notStarted}\n\n`;
-
-    markdown += `### Phases\n`;
-    markdown += `- **Total:** ${this.data.metrics.phases.total}\n`;
-    markdown += `- **Completed:** ${this.data.metrics.phases.completed}\n`;
-    markdown += `- **In Progress:** ${this.data.metrics.phases.inProgress}\n`;
-    markdown += `- **Not Started:** ${this.data.metrics.phases.notStarted}\n\n`;
-
-    // Progress bar
-    const progressBarWidth = 50;
-    const filledWidth = Math.round(
-      (this.data.metrics.deliverables.completionRate / 100) * progressBarWidth
-    );
-    const progressBar =
-      '█'.repeat(filledWidth) + '░'.repeat(progressBarWidth - filledWidth);
-    markdown += `\`\`\`\n${progressBar} ${this.data.metrics.deliverables.completionRate}%\n\`\`\`\n\n`;
-
-    markdown += `---\n\n`;
-
-    // Phase details
-    markdown += `## 📋 Phase Status\n\n`;
-
-    for (const phase of Object.values(this.data.phases)) {
-      const statusEmoji =
-        {
-          completed: '✅',
-          'in-progress': '🔄',
-          'not-started': '⏸️',
-        }[phase.status] || '❓';
-
-      markdown += `### ${statusEmoji} Phase ${phase.number}: ${phase.name}\n\n`;
-      markdown += `- **Duration:** ${phase.duration}\n`;
-      markdown += `- **Status:** ${phase.status}\n`;
-      markdown += `- **Progress:** ${phase.progress}%\n`;
-
-      if (phase.startDate) {
-        markdown += `- **Started:** ${new Date(phase.startDate).toLocaleDateString()}\n`;
-      }
-      if (phase.endDate) {
-        markdown += `- **Completed:** ${new Date(phase.endDate).toLocaleDateString()}\n`;
-      }
-
-      markdown += `\n#### Deliverables (${phase.deliverables.filter((d) => d.status === 'completed').length}/${phase.deliverables.length})\n\n`;
-
-      // Group by status
-      const byStatus = {
-        completed: phase.deliverables.filter((d) => d.status === 'completed'),
-        'in-progress': phase.deliverables.filter((d) => d.status === 'in-progress'),
-        'not-started': phase.deliverables.filter((d) => d.status === 'not-started'),
-      };
-
-      for (const [status, deliverables] of Object.entries(byStatus)) {
-        if (deliverables.length > 0) {
-          const emoji = { completed: '✅', 'in-progress': '🔄', 'not-started': '⬜' }[status];
-          markdown += `**${emoji} ${status.charAt(0).toUpperCase() + status.slice(1)} (${deliverables.length})**\n`;
-          deliverables.forEach((d) => {
-            markdown += `- ${d.name}`;
-            if (d.assignee) markdown += ` - *Assignee: ${d.assignee}*`;
-            if (d.dueDate)
-              markdown += ` - *Due: ${new Date(d.dueDate).toLocaleDateString()}*`;
-            markdown += `\n`;
-          });
-          markdown += `\n`;
-        }
-      }
-
-      markdown += `---\n\n`;
-    }
-
-    await fs.writeFile(dashboardFile, markdown, 'utf-8');
-
-    console.log(`\n✅ Dashboard generated: ${dashboardFile}\n`);
-    return dashboardFile;
+    return generateDashboard(this.data, this.brandConfig.brandName);
   }
 
   async exportDeliverablesList(): Promise<string> {
     if (!this.data) {
       throw new Error('Project tracker not initialized. Call initialize() first.');
     }
-
-    const brandSlug = this.brandConfig.brandName.toLowerCase().replace(/\s+/g, '-');
-    const outputDir = path.join(process.cwd(), 'output', brandSlug);
-    await fs.mkdir(outputDir, { recursive: true });
-
-    const csvFile = path.join(outputDir, 'deliverables-checklist.csv');
-
-    let csv =
-      'Phase,Phase Name,Deliverable,Status,Assignee,Due Date,Completed Date,Notes\n';
-
-    for (const phase of Object.values(this.data.phases)) {
-      phase.deliverables.forEach((d) => {
-        csv += `"Phase ${phase.number}","${phase.name}","${d.name}","${d.status}","${d.assignee || ''}","${d.dueDate || ''}","${d.completedDate || ''}","${d.notes.join('; ')}"\n`;
-      });
-    }
-
-    await fs.writeFile(csvFile, csv, 'utf-8');
-    console.log(`✅ Deliverables checklist exported: ${csvFile}\n`);
-    return csvFile;
+    return exportDeliverablesList(this.data, this.brandConfig.brandName);
   }
 
   getStatus(): ProjectStatus | null {

@@ -3,22 +3,42 @@
 export interface CompanyProfile {
   founded: number;
   currentRevenue?: string;
+  targetRevenue?: string;
+  teamSize?: number;
   channels: string[];
   stores?: number;
   website?: string;
   employees?: number;
   headquarters?: string;
+  geographicPresence?: string[];
+  description?: string;
 }
 
 export interface ProjectObjectives {
   primary: string;
   goals: string[];
+  timeline?: string;
+  budget?: string;
   successMetrics?: string[];
 }
 
 export interface Competitor {
   name: string;
-  category: 'premium' | 'mass-market' | 'd2c' | 'international' | 'enterprise' | 'mid-market';
+  category:
+    | 'premium'
+    | 'mass-market'
+    | 'd2c'
+    | 'international'
+    | 'enterprise'
+    | 'mid-market'
+    | 'Direct competitor'
+    | 'Private label competitor'
+    | 'Traditional competitor'
+    | 'Premium competitor'
+    | 'Health-focused competitor'
+    | 'Premium artisanal competitor'
+    | 'Gourmet competitor'
+    | 'Healthy snacking competitor';
   positioning: string;
   website?: string;
   strengths?: string[];
@@ -40,7 +60,10 @@ export interface BrandConfiguration {
   // Research customization (optional)
   competitors?: Competitor[];
   targetAudience?: string[];
+  targetAudiences?: any[]; // For detailed audience personas
   marketSegments?: string[];
+  brandChallenges?: string[]; // Brand-specific challenges
+  brandOpportunities?: string[]; // Brand-specific opportunities
 
   // Deliverables customization (optional)
   customDeliverables?: Record<string, string[]>;
