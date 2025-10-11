@@ -166,7 +166,7 @@ Output Format: JSON
         5 - validationResult.validatedPoints.length // Generate enough to have 5 total
       );
 
-      validationResult.validatedPoints.push(...alternatives);
+      (validationResult.validatedPoints as any[]).push(...alternatives);
     }
 
     // Format proof points with citations
