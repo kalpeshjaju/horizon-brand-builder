@@ -1,0 +1,319 @@
+{
+  "history": [
+    {
+      "llmFeatureId": "seo-metadata",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:22.730Z",
+          "llmFeatureId": "seo-metadata",
+          "metrics": {
+            "accuracy": 0.7,
+            "precision": 0.7,
+            "recall": 0.7,
+            "f1Score": 0.7,
+            "avgResponseTime": 12507,
+            "avgTokens": 310,
+            "avgCost": 0.002634,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "hashtag-strategy",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:24.734Z",
+          "llmFeatureId": "hashtag-strategy",
+          "metrics": {
+            "accuracy": 0.9,
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1Score": 0.9,
+            "avgResponseTime": 14511,
+            "avgTokens": 640,
+            "avgCost": 0.005892,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "website-copy",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:29.208Z",
+          "llmFeatureId": "website-copy",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 18986,
+            "avgTokens": 723,
+            "avgCost": 0.007389000000000001,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "press-release",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:33.593Z",
+          "llmFeatureId": "press-release",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 23369,
+            "avgTokens": 907,
+            "avgCost": 0.010713,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "influencer-outreach",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:33.910Z",
+          "llmFeatureId": "influencer-outreach",
+          "metrics": {
+            "accuracy": 0.7,
+            "precision": 0.7,
+            "recall": 0.7,
+            "f1Score": 0.7,
+            "avgResponseTime": 23686,
+            "avgTokens": 879,
+            "avgCost": 0.010449000000000002,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "email-templates",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:33.942Z",
+          "llmFeatureId": "email-templates",
+          "metrics": {
+            "accuracy": 0.7,
+            "precision": 0.7,
+            "recall": 0.7,
+            "f1Score": 0.7,
+            "avgResponseTime": 23719,
+            "avgTokens": 1098,
+            "avgCost": 0.012522,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "launch-checklist",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:35.332Z",
+          "llmFeatureId": "launch-checklist",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 25108,
+            "avgTokens": 1496,
+            "avgCost": 0.01932,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "creative-assets",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:36.324Z",
+          "llmFeatureId": "creative-assets",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 26100,
+            "avgTokens": 1020,
+            "avgCost": 0.012852,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "engagement-playbook",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:39.402Z",
+          "llmFeatureId": "engagement-playbook",
+          "metrics": {
+            "accuracy": 0.7,
+            "precision": 0.7,
+            "recall": 0.7,
+            "f1Score": 0.7,
+            "avgResponseTime": 29179,
+            "avgTokens": 1108,
+            "avgCost": 0.013248000000000001,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "launch-timeline",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:42.774Z",
+          "llmFeatureId": "launch-timeline",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 32551,
+            "avgTokens": 1429,
+            "avgCost": 0.018147,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "channel-plans",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:42.811Z",
+          "llmFeatureId": "channel-plans",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 32587,
+            "avgTokens": 1589,
+            "avgCost": 0.020727,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "product-descriptions",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:43.092Z",
+          "llmFeatureId": "product-descriptions",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 32869,
+            "avgTokens": 1542,
+            "avgCost": 0.019578,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "story-ideas",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:21:49.249Z",
+          "llmFeatureId": "story-ideas",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 39026,
+            "avgTokens": 1510,
+            "avgCost": 0.020514,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "content-calendar",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:22:16.640Z",
+          "llmFeatureId": "content-calendar",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 66417,
+            "avgTokens": 3527,
+            "avgCost": 0.047841,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "campaign-overview",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T03:23:34.442Z",
+          "llmFeatureId": "campaign-overview",
+          "metrics": {
+            "accuracy": 0.6,
+            "precision": 0.6,
+            "recall": 0.6,
+            "f1Score": 0.6,
+            "avgResponseTime": 11313,
+            "avgTokens": 313,
+            "avgCost": 0.002595,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    }
+  ]
+}

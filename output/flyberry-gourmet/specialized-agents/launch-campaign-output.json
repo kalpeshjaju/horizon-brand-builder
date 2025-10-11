@@ -1,0 +1,465 @@
+{
+  "brandName": "Flyberry Gourmet",
+  "campaignOverview": {
+    "objective": "Introduce Flyberry Gourmet to the market as a premium food brand that delivers exceptional taste and quality. Drive initial brand awareness and generate trial purchases among food enthusiasts and quality-conscious consumers.",
+    "targetAudience": "Food enthusiasts and quality-conscious consumers aged 25-45 with disposable income who value premium ingredients and artisanal food experiences.",
+    "keyMessage": "Discover extraordinary flavors with Flyberry Gourmet – where premium ingredients meet culinary artistry.",
+    "duration": "8 weeks"
+  },
+  "timeline": {
+    "totalDuration": "6 weeks",
+    "weeks": [
+      {
+        "weekNumber": 1,
+        "focus": "Foundation & Content Creation",
+        "activities": [
+          "Finalize brand messaging and positioning strategy",
+          "Complete product photography and video content shoots",
+          "Develop comprehensive social media content calendar",
+          "Create email marketing sequences for launch campaign",
+          "Set up analytics tracking and measurement systems",
+          "Establish partnerships with food bloggers and influencers",
+          "Prepare press kit and media outreach materials"
+        ],
+        "deliverables": [
+          "Brand style guide and messaging framework",
+          "30+ high-quality product photos and 5 promotional videos",
+          "Email marketing automation sequences",
+          "Influencer partnership agreements (5-10 partners)",
+          "Press release and media kit"
+        ]
+      },
+      {
+        "weekNumber": 2,
+        "focus": "Pre-launch Buzz Building",
+        "activities": [
+          "Launch teaser campaign across social media platforms",
+          "Begin influencer collaboration content creation",
+          "Send press releases to food and lifestyle media outlets",
+          "Start email list building with lead magnets",
+          "Conduct final product testing and quality assurance",
+          "Set up customer service protocols and FAQ resources",
+          "Create countdown campaign materials"
+        ],
+        "deliverables": [
+          "Teaser campaign content (10+ posts across platforms)",
+          "Influencer-generated content (first batch)",
+          "Media coverage secured (3-5 outlets)",
+          "Lead magnet campaigns (recipe guides, samples)",
+          "Customer service playbook and FAQ page"
+        ]
+      },
+      {
+        "weekNumber": 3,
+        "focus": "Launch Week Activation",
+        "activities": [
+          "Execute official product launch announcement",
+          "Deploy full-scale social media campaign",
+          "Send launch email to entire subscriber base",
+          "Activate influencer partnership content",
+          "Launch paid advertising campaigns (social, search)",
+          "Coordinate media interviews and coverage",
+          "Monitor and respond to customer feedback in real-time"
+        ],
+        "deliverables": [
+          "Launch announcement across all channels",
+          "Full social media campaign rollout (20+ posts)",
+          "Launch email campaign (3-part series)",
+          "Paid advertising campaigns live on 3+ platforms",
+          "Media interview appearances (2-3 secured)"
+        ]
+      },
+      {
+        "weekNumber": 4,
+        "focus": "Launch Momentum Amplification",
+        "activities": [
+          "Share customer testimonials and user-generated content",
+          "Run limited-time promotional offers to drive urgency",
+          "Engage with community feedback and reviews",
+          "Expand influencer partnerships with micro-influencers",
+          "Optimize ad campaigns based on initial performance data",
+          "Conduct live demonstrations or virtual tastings",
+          "Pitch follow-up stories to media contacts"
+        ],
+        "deliverables": [
+          "Customer testimonial campaign (15+ testimonials)",
+          "Limited-time promotion campaign materials",
+          "User-generated content compilation",
+          "Expanded influencer network (10+ new partnerships)",
+          "Live event or virtual tasting session"
+        ]
+      },
+      {
+        "weekNumber": 5,
+        "focus": "Performance Analysis & Optimization",
+        "activities": [
+          "Analyze launch metrics and campaign performance",
+          "Gather customer feedback through surveys and reviews",
+          "Optimize website conversion rates based on user behavior",
+          "Refine advertising targeting and messaging",
+          "Identify top-performing content for future campaigns",
+          "Address any operational issues or customer concerns",
+          "Plan content strategy for sustained engagement"
+        ],
+        "deliverables": [
+          "Comprehensive launch performance report",
+          "Customer feedback analysis and insights",
+          "Website optimization recommendations implemented",
+          "Refined advertising strategy and targeting",
+          "Content performance analysis and recommendations"
+        ]
+      },
+      {
+        "weekNumber": 6,
+        "focus": "Post-launch Sustainability & Growth Planning",
+        "activities": [
+          "Develop long-term content and marketing strategy",
+          "Establish ongoing customer retention programs",
+          "Create referral and loyalty program frameworks",
+          "Plan next phase product launches or expansions",
+          "Build strategic partnerships with retailers or distributors",
+          "Optimize supply chain and fulfillment processes",
+          "Set up systems for continuous customer feedback collection"
+        ],
+        "deliverables": [
+          "90-day post-launch marketing strategy",
+          "Customer retention and loyalty program launch",
+          "Referral program implementation",
+          "Strategic partnership agreements (2-3 partners)",
+          "Operational optimization plan and implementation"
+        ]
+      }
+    ]
+  },
+  "channelPlans": [
+    {
+      "channel": "Social Media",
+      "objective": "Build brand awareness and community engagement through visually appealing content that showcases Flyberry Gourmet's premium food offerings and drives traffic to purchase channels.",
+      "tactics": [
+        "Launch Instagram account with high-quality food photography and behind-the-scenes content",
+        "Create Facebook business page with product showcases, customer testimonials, and cooking tips",
+        "Develop LinkedIn presence targeting B2B opportunities and corporate gifting",
+        "Implement user-generated content campaigns encouraging customers to share their Flyberry experiences",
+        "Run Instagram Stories and Facebook Live sessions featuring product demonstrations and recipes",
+        "Execute social media contests and giveaways to increase follower engagement",
+        "Partner with food bloggers and micro-influencers for authentic product endorsements"
+      ],
+      "budget": "$3,000-5,000/month",
+      "kpis": [
+        "Follower growth rate across all platforms",
+        "Engagement rate (likes, comments, shares)",
+        "Click-through rate to website",
+        "User-generated content volume",
+        "Social media conversion rate"
+      ]
+    },
+    {
+      "channel": "Email Marketing",
+      "objective": "Nurture leads and drive repeat purchases through personalized communications that highlight new products, exclusive offers, and culinary inspiration.",
+      "tactics": [
+        "Create welcome email series for new subscribers introducing brand story and product range",
+        "Develop segmented email campaigns based on purchase history and preferences",
+        "Launch monthly newsletter featuring recipes, seasonal products, and company updates",
+        "Implement abandoned cart recovery email sequences with personalized product recommendations",
+        "Send exclusive early-access offers to VIP subscribers for new product launches",
+        "Create holiday-themed email campaigns targeting gift-giving occasions",
+        "Deploy post-purchase follow-up emails requesting reviews and suggesting complementary products"
+      ],
+      "budget": "$800-1,500/month",
+      "kpis": [
+        "Email open rate",
+        "Click-through rate",
+        "Email-driven revenue",
+        "List growth rate",
+        "Unsubscribe rate"
+      ]
+    },
+    {
+      "channel": "Content Marketing",
+      "objective": "Establish Flyberry Gourmet as a trusted authority in gourmet foods while driving organic traffic and improving search engine visibility through valuable, SEO-optimized content.",
+      "tactics": [
+        "Launch company blog with weekly posts on gourmet cooking tips, ingredient spotlights, and recipes",
+        "Optimize website and blog content for food-related keywords and local SEO",
+        "Create comprehensive buying guides for gourmet food categories",
+        "Develop seasonal content calendars aligned with food holidays and culinary trends",
+        "Produce downloadable recipe books and cooking guides as lead magnets",
+        "Write guest posts for established food and lifestyle blogs to build backlinks",
+        "Create video content for YouTube channel featuring product demonstrations and cooking tutorials"
+      ],
+      "budget": "$2,000-3,500/month",
+      "kpis": [
+        "Organic website traffic growth",
+        "Keyword ranking improvements",
+        "Blog engagement metrics (time on page, bounce rate)",
+        "Lead magnet download rates",
+        "Backlink acquisition rate"
+      ]
+    },
+    {
+      "channel": "Paid Advertising",
+      "objective": "Drive immediate traffic and conversions through targeted advertising campaigns that reach qualified prospects actively searching for gourmet food products.",
+      "tactics": [
+        "Launch Google Ads campaigns targeting high-intent keywords like 'gourmet food delivery' and 'artisan ingredients'",
+        "Create Facebook and Instagram ads featuring appetizing product imagery and customer testimonials",
+        "Implement Google Shopping campaigns showcasing product catalog with pricing and reviews",
+        "Run retargeting campaigns across Meta and Google platforms to re-engage website visitors",
+        "Test video ads on Facebook and Instagram highlighting product quality and brand story",
+        "Deploy location-based advertising to target affluent demographics in key markets",
+        "Create seasonal promotional campaigns for holidays and special occasions"
+      ],
+      "budget": "$4,000-8,000/month",
+      "kpis": [
+        "Return on ad spend (ROAS)",
+        "Cost per acquisition (CPA)",
+        "Click-through rate by platform",
+        "Conversion rate by campaign type",
+        "Quality Score (Google Ads)"
+      ]
+    },
+    {
+      "channel": "PR & Influencer",
+      "objective": "Generate credible third-party endorsements and media coverage that builds brand trust and reaches new audiences through authentic storytelling and expert recommendations.",
+      "tactics": [
+        "Develop media kit and press releases announcing Flyberry Gourmet launch and unique value proposition",
+        "Pitch food editors and journalists at lifestyle magazines and culinary publications",
+        "Partner with food influencers and chefs for authentic product reviews and recipe collaborations",
+        "Submit products for consideration in gift guides and 'best of' roundups",
+        "Participate in local food festivals and gourmet events to build brand presence",
+        "Create influencer seeding program sending complimentary products to targeted food personalities",
+        "Establish relationships with food bloggers and podcast hosts for feature opportunities"
+      ],
+      "budget": "$2,500-4,000/month",
+      "kpis": [
+        "Media mentions and coverage volume",
+        "Influencer partnership reach and engagement",
+        "Earned media value",
+        "Website traffic from PR and influencer referrals",
+        "Brand sentiment and share of voice"
+      ]
+    }
+  ],
+  "creativeAssets": [
+    {
+      "assetType": "Hero Launch Video",
+      "description": "Cinematic 30-second video showcasing Flyberry's premium gourmet products with elegant food styling, brand story narration, and appetite-appealing close-ups of signature items.",
+      "specifications": "1920x1080, MP4, 30 seconds, 4K resolution"
+    },
+    {
+      "assetType": "Instagram Story Collection",
+      "description": "5-slide animated story series featuring product reveals, behind-the-scenes kitchen moments, founder introduction, and swipe-up call-to-action for launch offer.",
+      "specifications": "1080x1920, MP4/PNG, 15 seconds per slide"
+    },
+    {
+      "assetType": "Facebook Carousel Ad",
+      "description": "Interactive 4-card carousel highlighting different gourmet product categories with mouth-watering photography, pricing, and 'Shop Now' buttons for each item.",
+      "specifications": "1080x1080 per card, JPG/PNG, 4 cards total"
+    },
+    {
+      "assetType": "Email Header Banner",
+      "description": "Premium launch announcement header featuring Flyberry logo, 'Now Open' messaging, elegant food photography backdrop, and sophisticated color palette matching brand identity.",
+      "specifications": "600x200, PNG/JPG, web-optimized"
+    },
+    {
+      "assetType": "Website Hero Banner",
+      "description": "Full-width landing page banner with layered product photography, bold launch typography, limited-time offer highlight, and prominent CTA button.",
+      "specifications": "1920x800, JPG/PNG, responsive design ready"
+    },
+    {
+      "assetType": "Google Ads Display Creative",
+      "description": "Eye-catching rectangular ad featuring signature gourmet dish, Flyberry branding, launch special pricing, and compelling 'Order Today' call-to-action message.",
+      "specifications": "728x90 leaderboard, PNG/JPG, under 150KB"
+    },
+    {
+      "assetType": "Product Catalog Spread",
+      "description": "Print-ready double-page layout showcasing featured gourmet items with professional photography, descriptions, prices, and elegant typography for premium positioning.",
+      "specifications": "8.5x11 spread, 300 DPI, PDF/INDD"
+    },
+    {
+      "assetType": "TikTok Launch Teaser",
+      "description": "Vertical short-form video with trending audio, quick-cut product reveals, taste-test reactions, and branded hashtag challenge to generate viral engagement.",
+      "specifications": "1080x1920, MP4, 15-60 seconds"
+    },
+    {
+      "assetType": "LinkedIn Company Announcement",
+      "description": "Professional launch post graphic featuring company milestone messaging, team photo, product showcase, and business achievement highlights for B2B audience.",
+      "specifications": "1200x627, PNG/JPG, LinkedIn optimized"
+    },
+    {
+      "assetType": "Retargeting Banner Set",
+      "description": "Multi-size banner collection for programmatic advertising featuring abandoned cart messaging, limited-time launch discounts, and consistent brand visual elements.",
+      "specifications": "Multiple sizes: 320x50, 728x90, 300x250, PNG/HTML5"
+    }
+  ],
+  "pressRelease": {
+    "headline": "Flyberry Gourmet Launches Premium Artisanal Food Collection for Discerning Home Chefs",
+    "subheadline": "New brand debuts with chef-crafted sauces, marinades and seasonings made from locally-sourced ingredients",
+    "body": "CHICAGO, IL – March 15, 2024 – Flyberry Gourmet, a new premium artisanal food brand, today announced its official launch with a curated collection of chef-crafted sauces, marinades and seasonings designed to elevate everyday home cooking. The company's debut product line features 12 unique flavor profiles made exclusively from locally-sourced, organic ingredients.\n\nFounded by culinary veteran Maria Santos, Flyberry Gourmet addresses the growing demand for restaurant-quality ingredients that home cooks can easily incorporate into their daily meals. The brand's signature products include small-batch hot sauces, gourmet marinades, and artisanal spice blends that transform simple ingredients into extraordinary dishes.\n\n\"After 15 years in professional kitchens, I saw a real gap between what chefs have access to and what's available to home cooks,\" said Santos, CEO and founder of Flyberry Gourmet. \"Our mission is to democratize gourmet cooking by providing the same high-quality, flavor-forward ingredients that restaurants use, but packaged for the home kitchen.\"\n\nEach Flyberry Gourmet product is handcrafted in small batches using traditional techniques and premium ingredients sourced from local farms within a 200-mile radius. The collection features no artificial preservatives, colors or flavors, appealing to health-conscious consumers who refuse to compromise on taste. Products range from $8.99 to $14.99 and are initially available through the company's website and select specialty food retailers across the Midwest.\n\nThe launch comes as the premium condiment market continues to experience significant growth, with consumers increasingly seeking unique, high-quality products that enhance their culinary experiences at home. Flyberry Gourmet plans to expand its retail presence nationally over the next 18 months while introducing seasonal limited-edition flavors.",
+    "boilerplate": "About Flyberry Gourmet: Founded in 2024 by chef Maria Santos, Flyberry Gourmet creates premium artisanal sauces, marinades and seasonings for discerning home cooks. Based in Chicago, the company is committed to using locally-sourced, organic ingredients and traditional small-batch production methods to deliver restaurant-quality flavors to home kitchens nationwide.",
+    "contacts": "Media Contact:\nSarah Mitchell\nFlyberry Gourmet\nPhone: (312) 555-0147\nEmail: press@flyberrygourmet.com\nWebsite: www.flyberrygourmet.com"
+  },
+  "launchDayChecklist": [
+    {
+      "time": "7:00 AM",
+      "task": "Verify all website functionality and payment processing",
+      "owner": "Tech",
+      "priority": "critical"
+    },
+    {
+      "time": "7:15 AM",
+      "task": "Confirm inventory levels and fulfillment readiness",
+      "owner": "Marketing",
+      "priority": "critical"
+    },
+    {
+      "time": "7:30 AM",
+      "task": "Test all social media scheduled posts and links",
+      "owner": "Social",
+      "priority": "high"
+    },
+    {
+      "time": "7:45 AM",
+      "task": "Send launch day brief to all press contacts",
+      "owner": "PR",
+      "priority": "high"
+    },
+    {
+      "time": "8:00 AM",
+      "task": "Final review of launch email campaign before send",
+      "owner": "Marketing",
+      "priority": "critical"
+    },
+    {
+      "time": "8:15 AM",
+      "task": "Activate customer service channels and prepare FAQ responses",
+      "owner": "Marketing",
+      "priority": "high"
+    },
+    {
+      "time": "8:30 AM",
+      "task": "Set up real-time analytics monitoring dashboard",
+      "owner": "Tech",
+      "priority": "high"
+    },
+    {
+      "time": "8:45 AM",
+      "task": "Prepare and stage social media launch content",
+      "owner": "Social",
+      "priority": "critical"
+    },
+    {
+      "time": "9:00 AM",
+      "task": "Launch website and make all products live",
+      "owner": "Tech",
+      "priority": "critical"
+    },
+    {
+      "time": "9:05 AM",
+      "task": "Send launch announcement email to subscriber list",
+      "owner": "Marketing",
+      "priority": "critical"
+    },
+    {
+      "time": "9:10 AM",
+      "task": "Publish launch posts across all social media platforms",
+      "owner": "Social",
+      "priority": "critical"
+    },
+    {
+      "time": "9:30 AM",
+      "task": "Distribute press release to media outlets",
+      "owner": "PR",
+      "priority": "high"
+    },
+    {
+      "time": "9:45 AM",
+      "task": "Begin influencer outreach and partnership activations",
+      "owner": "PR",
+      "priority": "medium"
+    },
+    {
+      "time": "10:00 AM",
+      "task": "Monitor website traffic and performance metrics",
+      "owner": "Tech",
+      "priority": "critical"
+    },
+    {
+      "time": "10:30 AM",
+      "task": "Track and respond to social media engagement",
+      "owner": "Social",
+      "priority": "high"
+    },
+    {
+      "time": "11:00 AM",
+      "task": "Monitor order volume and payment processing",
+      "owner": "Marketing",
+      "priority": "critical"
+    },
+    {
+      "time": "11:30 AM",
+      "task": "Follow up with key media contacts for coverage",
+      "owner": "PR",
+      "priority": "medium"
+    },
+    {
+      "time": "12:00 PM",
+      "task": "Analyze morning performance metrics and adjust strategies",
+      "owner": "Marketing",
+      "priority": "high"
+    },
+    {
+      "time": "1:00 PM",
+      "task": "Engage with customer inquiries and feedback",
+      "owner": "Social",
+      "priority": "high"
+    },
+    {
+      "time": "2:00 PM",
+      "task": "Push additional social media content and user-generated content",
+      "owner": "Social",
+      "priority": "medium"
+    },
+    {
+      "time": "3:00 PM",
+      "task": "Coordinate with fulfillment team on order processing",
+      "owner": "Marketing",
+      "priority": "high"
+    },
+    {
+      "time": "4:00 PM",
+      "task": "Conduct media interviews if scheduled",
+      "owner": "PR",
+      "priority": "medium"
+    },
+    {
+      "time": "5:00 PM",
+      "task": "Compile comprehensive day performance report",
+      "owner": "Marketing",
+      "priority": "high"
+    },
+    {
+      "time": "6:00 PM",
+      "task": "Review and document any technical issues or improvements needed",
+      "owner": "Tech",
+      "priority": "high"
+    },
+    {
+      "time": "7:00 PM",
+      "task": "Plan and schedule next-day follow-up activities",
+      "owner": "Marketing",
+      "priority": "medium"
+    }
+  ],
+  "influencerOutreach": {
+    "targetProfiles": [
+      "Food bloggers and recipe creators (25k-100k followers) who focus on gourmet cooking and artisanal ingredients",
+      "Lifestyle micro-influencers (10k-50k followers) who share daily meal prep, cooking tips, and kitchen essentials",
+      "Health and wellness influencers (50k-200k followers) who promote clean eating and premium food products",
+      "Local food enthusiasts and regional influencers (5k-25k followers) in key metropolitan markets",
+      "Family-focused content creators (20k-75k followers) who share meal planning and cooking with kids",
+      "Culinary professionals and chefs (15k-100k followers) who showcase cooking techniques and ingredient spotlights",
+      "Food photography specialists (30k-150k followers) who create visually stunning content around gourmet products"
+    ],
+    "outreachScript": "Hi [Influencer Name],\n\nI'm [Your Name] from Flyberry Gourmet, and I absolutely loved your recent post about [specific content reference]. Your passion for [relevant topic] really resonates with our brand values.\n\nFlyberry Gourmet specializes in premium, artisanal food products that bring restaurant-quality flavors to home kitchens. We're looking to partner with authentic food enthusiasts who genuinely connect with their audience about quality ingredients and culinary experiences.\n\nWe'd love to collaborate with you by sending a curated selection of our gourmet products for you to try and share with your community. This could include recipe creation, styling tips, or simply sharing your honest experience with our products.\n\nWould you be interested in learning more about a potential partnership? I'd be happy to send over more details about our product line and collaboration opportunities.\n\nLooking forward to potentially working together!\n\nBest regards,\n[Your Name]\nFlyberry Gourmet Partnership Team",
+    "partnershipGuidelines": "Collaboration includes complimentary product samples worth $50-150 based on follower count and engagement rates. Content requirements: minimum 2 posts (1 Instagram post + 1 Story series) featuring authentic product integration within 2 weeks of receiving products. Micro-influencers receive product-only compensation, while larger influencers (100k+) may receive additional monetary compensation of $200-500. All content must include #FliberryGourmet and #Partner hashtags. Influencers retain creative control but must tag our official account. We provide high-resolution product images and key messaging points. Content should feel authentic and align with influencer's usual style. Timeline: Initial outreach response within 1 week, product shipment within 3-5 business days of agreement, content delivery within 14 days of product receipt."
+  }
+}

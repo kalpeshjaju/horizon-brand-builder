@@ -1,0 +1,105 @@
+{
+  "brandName": "Flyberry Gourmet",
+  "websiteCopy": {
+    "homepage": {
+      "hero": {
+        "headline": "Elevate Every Meal with Flyberry Gourmet",
+        "subheadline": "Premium artisanal foods crafted with passion, delivering restaurant-quality flavors straight to your kitchen.",
+        "cta": "Shop Now"
+      },
+      "features": [
+        {
+          "title": "Artisan-Crafted Excellence",
+          "description": "Every product is meticulously handcrafted using traditional techniques and the finest ingredients sourced from trusted local producers worldwide."
+        },
+        {
+          "title": "Farm-to-Table Freshness",
+          "description": "We partner directly with sustainable farms and artisans to ensure peak freshness and quality in every jar, bottle, and package."
+        },
+        {
+          "title": "Chef-Approved Flavors",
+          "description": "Our gourmet collection is curated and tested by professional chefs to bring restaurant-quality taste to your home cooking adventures."
+        }
+      ],
+      "about": "Born from a passion for exceptional flavors, Flyberry Gourmet emerged when founder Sarah Chen discovered a gap between ordinary grocery store products and truly extraordinary gourmet foods. After years of traveling and collecting recipes from artisans worldwide, she realized that everyone deserves access to premium, handcrafted ingredients that transform everyday cooking into culinary magic. Our mission is simple: to make gourmet accessible. We work exclusively with small-batch producers who share our commitment to quality, sustainability, and authentic flavors. From our signature berry preserves to artisanal oils and specialty condiments, each product tells a story of craftsmanship and care. At Flyberry Gourmet, we believe that great food brings people together, creates lasting memories, and elevates life's everyday moments into something truly special."
+    },
+    "productPages": [],
+    "aboutUs": {
+      "story": "Born from a passion for exceptional flavors, Flyberry Gourmet emerged when founder Sarah Chen discovered a gap between ordinary grocery store products and truly extraordinary gourmet foods. After years of traveling and collecting recipes from artisans worldwide, she realized that everyone deserves access to premium, handcrafted ingredients that transform everyday cooking into culinary magic. Our mission is simple: to make gourmet accessible. We work exclusively with small-batch producers who share our commitment to quality, sustainability, and authentic flavors. From our signature berry preserves to artisanal oils and specialty condiments, each product tells a story of craftsmanship and care. At Flyberry Gourmet, we believe that great food brings people together, creates lasting memories, and elevates life's everyday moments into something truly special.",
+      "mission": "",
+      "values": []
+    }
+  },
+  "emailTemplates": {
+    "welcome": {
+      "subject": "Welcome to Flyberry Gourmet Family!",
+      "preheader": "Your culinary adventure begins now with premium gourmet experiences.",
+      "body": "Dear Food Lover,\n\nWelcome to Flyberry Gourmet – where exceptional taste meets culinary artistry! We're thrilled to have you join our community of passionate food enthusiasts.\n\nAt Flyberry Gourmet, we believe that every meal should be a memorable experience. That's why we've dedicated ourselves to sourcing the finest ingredients and crafting extraordinary flavors that will elevate your dining moments.\n\nAs a valued member of our family, you'll be the first to discover our latest gourmet creations, seasonal specialties, and exclusive recipes from our expert chefs. We're committed to bringing restaurant-quality experiences right to your table.\n\nGet ready to embark on a delicious journey with us. Your taste buds are in for quite the adventure!\n\nWarm regards,\nThe Flyberry Gourmet Team",
+      "cta": "Start Shopping"
+    },
+    "orderConfirmation": {
+      "subject": "Your Flyberry Gourmet Order is Confirmed!",
+      "body": "Thank you for your order!\n\nWe're excited to confirm that your Flyberry Gourmet order has been successfully received and is now being prepared with care by our culinary team.\n\nOrder Details:\n- Order Number: [ORDER_NUMBER]\n- Estimated Delivery: [DELIVERY_DATE]\n- Delivery Address: [CUSTOMER_ADDRESS]\n\nYou'll receive a shipping notification with tracking information once your gourmet items are on their way. In the meantime, we're working diligently to ensure everything meets our high standards of quality and freshness.\n\nIf you have any questions about your order, please don't hesitate to contact our customer service team. We're here to make your Flyberry Gourmet experience exceptional.\n\nThank you for choosing us for your gourmet needs!"
+    },
+    "promotional": {
+      "subject": "Flash Sale: 25% Off Premium Collection!",
+      "preheader": "Limited time offer on our most popular gourmet items.",
+      "body": "Attention Food Connoisseurs!\n\nFor the next 48 hours only, we're offering an exclusive 25% discount on our entire Premium Collection – including our award-winning artisan sauces, handcrafted seasonings, and chef-curated meal kits.\n\nThis is your chance to stock up on those gourmet essentials you've been wanting to try, or to treat yourself to something truly special. From our signature truffle-infused oils to our small-batch preserves, every item in our Premium Collection represents the pinnacle of culinary excellence.\n\nWhether you're planning an intimate dinner party or simply want to elevate your everyday cooking, these premium ingredients will transform any meal into a gourmet masterpiece.\n\nDon't miss out – this flash sale ends Sunday at midnight, and our Premium Collection items tend to sell out quickly!\n\nHappy cooking,\nFlyberry Gourmet Team",
+      "cta": "Shop Now"
+    }
+  },
+  "productDescriptions": [
+    {
+      "productName": "Flyberry Artisan Wild Berry Jam",
+      "shortDescription": "Handcrafted with premium wild berries sourced from sustainable farms, our signature jam delivers an explosion of natural flavor. Made in small batches using traditional methods, this gourmet spread contains 40% more fruit than regular jams, with no artificial preservatives or high-fructose corn syrup.",
+      "longDescription": "Experience the taste of nature's finest with Flyberry Artisan Wild Berry Jam, where every jar tells a story of quality and craftsmanship. We carefully select the ripest wild blueberries, blackberries, and raspberries from certified sustainable farms, ensuring each berry meets our exacting standards. Our master jam makers use time-honored techniques, slow-cooking small batches to preserve the fruit's natural integrity and vibrant flavors. With 40% more fruit content than conventional jams, every spoonful bursts with authentic berry goodness. Free from artificial preservatives, colors, and high-fructose corn syrup, this premium spread is perfect for discerning palates who appreciate pure, wholesome ingredients. Whether paired with artisan breads, gourmet cheeses, or enjoyed straight from the spoon, Flyberry Artisan Wild Berry Jam transforms ordinary moments into extraordinary culinary experiences.",
+      "keyFeatures": [
+        "40% more fruit content than regular jams",
+        "Made from sustainably sourced wild berries",
+        "Small-batch production using traditional methods",
+        "No artificial preservatives or high-fructose corn syrup",
+        "Perfect for gourmet pairings and everyday indulgence"
+      ]
+    },
+    {
+      "productName": "Flyberry Gourmet Honey-Glazed Trail Mix",
+      "shortDescription": "A sophisticated blend of premium nuts, dried fruits, and seeds, delicately glazed with raw wildflower honey. This protein-rich snack combines almonds, cashews, dried cranberries, and pumpkin seeds for the perfect balance of sweet and savory. Ideal for active lifestyles and gourmet snacking experiences.",
+      "longDescription": "Elevate your snacking experience with Flyberry Gourmet Honey-Glazed Trail Mix, a meticulously crafted blend that redefines portable nutrition. Our expert food artisans combine premium roasted almonds, buttery cashews, antioxidant-rich dried cranberries, and nutrient-dense pumpkin seeds, then delicately coat each piece with pure raw wildflower honey sourced from local beekeepers. This creates a perfect harmony of textures and flavors that satisfies both sweet and savory cravings. Packed with plant-based protein, healthy fats, and natural energy, this trail mix is ideal for busy professionals, fitness enthusiasts, or anyone seeking a wholesome snack alternative. Each resealable pouch maintains freshness while providing convenient portion control. Free from artificial flavors and processed sugars, our honey glaze adds natural sweetness while preserving the integrity of each carefully selected ingredient. Whether you're hiking mountain trails or navigating office deadlines, Flyberry Gourmet Trail Mix delivers sustained energy and exceptional taste.",
+      "keyFeatures": [
+        "Premium nuts and seeds glazed with raw wildflower honey",
+        "High in plant-based protein and healthy fats",
+        "No artificial flavors or processed sugars",
+        "Convenient resealable packaging for freshness",
+        "Perfect for active lifestyles and on-the-go nutrition"
+      ]
+    },
+    {
+      "productName": "Flyberry Craft Small-Batch Hot Sauce",
+      "shortDescription": "Bold, complex flavors meet artisanal craftsmanship in this premium hot sauce featuring fire-roasted peppers and exotic spices. Aged for 60 days in oak barrels, it delivers medium heat with remarkable depth. Made from locally sourced ingredients with no artificial additives, perfect for culinary adventurers.",
+      "longDescription": "Ignite your culinary passion with Flyberry Craft Small-Batch Hot Sauce, where traditional fermentation meets innovative flavor profiling. Our sauce masters begin with carefully selected jalapeño, chipotle, and habanero peppers, fire-roasted to unlock their smoky essence and natural heat. Combined with aromatic garlic, tangy vinegar, and a secret blend of exotic spices, the mixture undergoes a 60-day aging process in American oak barrels, developing complex layers of flavor that distinguish it from mass-produced alternatives. This medium-heat sauce delivers a perfect balance of fire and flavor, providing enough kick to excite your palate without overwhelming delicate dishes. Sourced from local farms and produced in limited quantities, each bottle represents our commitment to quality over quantity. Free from artificial preservatives, colors, and flavor enhancers, this authentic hot sauce enhances everything from morning eggs to gourmet tacos. The distinctive smoky finish and lingering warmth make it a must-have condiment for serious food enthusiasts who demand exceptional quality.",
+      "keyFeatures": [
+        "60-day oak barrel aging for complex flavor development",
+        "Fire-roasted peppers with medium heat level",
+        "Made from locally sourced, all-natural ingredients",
+        "Small-batch production ensures premium quality",
+        "Versatile condiment perfect for multiple cuisines"
+      ]
+    }
+  ],
+  "seoMetadata": {
+    "metaTitle": "Flyberry Gourmet - Premium Food & Beverage Delights",
+    "metaDescription": "Discover exceptional gourmet foods and beverages at Flyberry Gourmet. Premium quality ingredients, artisan crafted products, and culinary excellence delivered.",
+    "keywords": [
+      "Flyberry Gourmet",
+      "gourmet food",
+      "premium beverages",
+      "artisan food products",
+      "gourmet grocery",
+      "specialty foods",
+      "craft beverages",
+      "gourmet food delivery",
+      "premium ingredients",
+      "luxury food brands"
+    ]
+  }
+}

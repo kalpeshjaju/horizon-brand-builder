@@ -1,0 +1,442 @@
+{
+  "project": {
+    "name": "O'Reilly & Sons Brand Transformation",
+    "brandName": "O'Reilly & Sons",
+    "startDate": "2025-10-11T03:06:34.348Z",
+    "totalDuration": "16 weeks",
+    "currentPhase": "phase1",
+    "overallStatus": "in-progress"
+  },
+  "phases": {
+    "phase1": {
+      "number": 1,
+      "name": "Brand Strategy & Positioning",
+      "duration": "3 weeks",
+      "status": "in-progress",
+      "startDate": "2025-10-11T03:06:34.348Z",
+      "endDate": null,
+      "deliverables": [
+        {
+          "name": "O'Reilly & Sons Brand Audit Report",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Competitive Landscape Analysis",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Target Audience Research",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Market Trends Analysis",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Positioning Strategy",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Architecture Framework",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Value Proposition Development",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Competitor Benchmarking",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Category Trends Report",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Pricing Strategy Analysis",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Channel Strategy Report",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Gap Analysis",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        }
+      ],
+      "milestones": [],
+      "risks": [],
+      "progress": 0
+    },
+    "phase2": {
+      "number": 2,
+      "name": "Brand Expression & Identity",
+      "duration": "4 weeks",
+      "status": "not-started",
+      "startDate": null,
+      "endDate": null,
+      "deliverables": [
+        {
+          "name": "Visual Identity System",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Naming Guidelines",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Logo Design Concepts",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Color Palette Strategy",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Typography System",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Iconography & Graphic Elements",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Photography Style Guide",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Illustration Guidelines",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Packaging Design System",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Voice & Tone Guidelines",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Messaging Framework",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Tagline Development",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Story Narrative",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        }
+      ],
+      "milestones": [],
+      "risks": [],
+      "progress": 0
+    },
+    "phase3": {
+      "number": 3,
+      "name": "Experience & Digital Strategy",
+      "duration": "4 weeks",
+      "status": "not-started",
+      "startDate": null,
+      "endDate": null,
+      "deliverables": [
+        {
+          "name": "Customer Journey Map",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Touchpoint Audit",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Digital Shelf Strategy",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "E-commerce Experience Guidelines",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Retail Experience Blueprint",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Quick Commerce Optimization",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Social Media Strategy",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Content Strategy Framework",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Community Building Plan",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Influencer Strategy",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Partnership Guidelines",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Activation Plan",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        }
+      ],
+      "milestones": [],
+      "risks": [],
+      "progress": 0
+    },
+    "phase4": {
+      "number": 4,
+      "name": "Activation & Growth",
+      "duration": "3 weeks",
+      "status": "not-started",
+      "startDate": null,
+      "endDate": null,
+      "deliverables": [
+        {
+          "name": "Launch Communication Strategy",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Channel Activation Plan",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Sales Enablement Materials",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Trade Marketing Guidelines",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Performance Marketing Strategy",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "CRM & Retention Strategy",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Gifting Strategy",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "B2B Communication Framework",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Internal Brand Launch Plan",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Training Materials",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Governance Guidelines",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        }
+      ],
+      "milestones": [],
+      "risks": [],
+      "progress": 0
+    },
+    "phase5": {
+      "number": 5,
+      "name": "Delivery & Implementation",
+      "duration": "2 weeks",
+      "status": "not-started",
+      "startDate": null,
+      "endDate": null,
+      "deliverables": [
+        {
+          "name": "Complete Brand Guidelines Document",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Digital Asset Library",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Vendor Onboarding Guide",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Compliance Checklist",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Launch Roadmap",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Success Metrics Dashboard",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Post-Launch Monitoring Framework",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Evolution Roadmap",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Future Innovation Pipeline",
+          "status": "not-started",
+          "notes": [],
+          "dependencies": []
+        }
+      ],
+      "milestones": [],
+      "risks": [],
+      "progress": 0
+    }
+  },
+  "metrics": {
+    "timeline": {
+      "plannedStartDate": "2025-10-11T03:06:34.348Z",
+      "actualStartDate": "2025-10-11T03:06:34.348Z",
+      "plannedEndDate": null,
+      "actualEndDate": null,
+      "daysElapsed": 0
+    },
+    "deliverables": {
+      "total": 57,
+      "completed": 0,
+      "inProgress": 0,
+      "notStarted": 57,
+      "completionRate": 0
+    },
+    "phases": {
+      "total": 5,
+      "completed": 0,
+      "inProgress": 1,
+      "notStarted": 4
+    }
+  },
+  "lastUpdated": "2025-10-11T03:06:34.348Z"
+}
