@@ -30,7 +30,15 @@
     "agents:content": "tsx src/agents/specialized/content-copywriting-agent.ts",
     "agents:social": "tsx src/agents/specialized/social-media-agent.ts",
     "agents:launch": "tsx src/agents/specialized/launch-campaign-agent.ts",
-    "complete": "tsx src/modes/complete-workflow.ts"
+    "complete": "tsx src/modes/complete-workflow.ts",
+    "workflow:start": "tsx src/cli/workflow-cli.ts start",
+    "workflow:status": "tsx src/cli/workflow-cli.ts status",
+    "workflow:history": "tsx src/cli/workflow-cli.ts history",
+    "workflow:validate": "tsx src/cli/workflow-cli.ts validate",
+    "workflow:tasks": "tsx src/cli/workflow-cli.ts tasks",
+    "detect-deep-review": "tsx scripts/orchestrator/deep-review-detector.ts",
+    "review:deep": "tsx scripts/local/deep-review.ts",
+    "review:deep:help": "tsx scripts/local/deep-review.ts --help"
   },
   "keywords": [
     "horizon",
@@ -49,10 +57,12 @@
   "description": "Horizon Brand Builder Pro - Generic AI-powered brand building system for ANY brand. Includes Fast Mode (2-5min), Professional Mode (consulting-grade, 64 deliverables), V2.0 intelligent accuracy, deep research (77 subtopics), and project management. Works for B2C, B2B, Luxury, SaaS, E-commerce, and more.",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.0",
-    "llm-squared-framework": "file:../llm-squared-framework",
-    "openai": "^4.0.0",
     "axios": "^1.7.0",
-    "dotenv": "^16.4.0"
+    "dotenv": "^16.4.0",
+    "llm-squared-framework": "file:../llm-squared-framework",
+    "marked": "^16.4.0",
+    "openai": "^4.0.0",
+    "playwright": "^1.56.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

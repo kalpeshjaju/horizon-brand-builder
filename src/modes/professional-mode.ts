@@ -6,7 +6,11 @@ import { BrandDesignOrchestrator } from '../agents/orchestrator.js';
 import { BrandClassifier } from '../utils/brand-classifier.js';
 import { initializeLLMService } from '../services/llm-service.js';
 import { ProjectManagementDashboard } from './pm-dashboard.js';
+import { BrandDiscoveryAgent } from '../agents/brand-discovery-agent.js';
+import { DataQualityManager } from '../services/data-quality-manager.js';
+import { EnhancedReportGenerator } from '../services/enhanced-report-generator.js';
 import type { BrandProfile } from '../types/brand-types.js';
+import type { BrandConfiguration } from '../types/project-types.js';
 
 interface ProfessionalModeOptions {
   brandName?: string;
@@ -79,19 +83,67 @@ export class ProfessionalMode {
     const startTime = Date.now();
 
     console.log('📊 Running Professional Mode workflow...\n');
+    console.log('  Phase 0: Brand Discovery & Verification (NEW)');
     console.log('  Phase 1: Deep Market Research (Extended)');
     console.log('  Phase 2: Comprehensive Brand Audit');
     console.log('  Phase 3: Strategic Brand Development');
-    console.log('  Phase 4: Project Management Tracking\n');
+    console.log('  Phase 4: Report Generation with Citations\n');
 
     console.log('⚡ This may take several minutes depending on research depth...\n');
 
-    // Run core workflow
+    // Phase 0: Brand Discovery (NEW)
+    console.log('🔍 Phase 0: Brand Discovery & Data Verification...\n');
+    const llm = LLMFactory.create({
+      provider: this.llmProvider,
+      model: this.model,
+      temperature: 0.7,
+      maxTokens: 4000,
+    });
+
+    const discoveryAgent = new BrandDiscoveryAgent(llm);
+
+    // Convert BrandProfile to BrandConfiguration
+    const brandConfig: BrandConfiguration = {
+      brandName: completeBrandProfile.brandName,
+      industry: completeBrandProfile.industry,
+      category: completeBrandProfile.targetAudience || 'General',
+      companyProfile: {
+        website: completeBrandProfile.website,
+        founded: 2020, // Default, will be updated by discovery
+        currentRevenue: 'Unknown',
+        channels: [],
+      },
+      projectObjectives: {
+        primary: `${completeBrandProfile.primaryGoal} for ${completeBrandProfile.brandName}`,
+        goals: [],
+      },
+    };
+
+    const discoveryReport = await discoveryAgent.discoverBrand(brandConfig);
+    console.log('✅ Brand Discovery complete\n');
+
+    // Phase 1-3: Run core strategy workflow
+    console.log('📊 Phase 1-3: Strategic Brand Development...\n');
     const output = await this.orchestrator.runBrandDesignWorkflow(completeBrandProfile);
+
+    // Phase 4: Enhanced Report Generation (NEW)
+    console.log('\n📝 Phase 4: Generating Enhanced Reports with Citations...\n');
+
+    const outputDir = `outputs/${brandProfile.brandName?.toLowerCase().replace(/\s+/g, '-') || 'brand'}`;
+
+    const reportGenerator = new EnhancedReportGenerator(
+      brandConfig,
+      discoveryReport,
+      output,
+      outputDir
+    );
+
+    const { markdown, html } = await reportGenerator.generate();
+    console.log('✅ Enhanced reports generated with verified data\n');
 
     // Update project tracking
     if (this.projectDashboard) {
-      console.log('\n📊 Updating project dashboard...\n');
+      console.log('📊 Updating project dashboard...\n');
 
       // Mark initial deliverables as in-progress
       await this.projectDashboard.updateDeliverable('phase1', 'Brand Audit Report', {
@@ -110,15 +162,30 @@ export class ProfessionalMode {
 
     const duration = ((Date.now() - startTime) / 1000 / 60).toFixed(1);
 
-    console.log('\n✅ Professional Mode - Phase 1 completed!\n');
+    console.log('\n✅ Professional Mode Complete!\n');
     console.log(`⏱️  Total time: ${duration} minutes\n`);
-    console.log('📁 Outputs saved in: outputs/' + brandProfile.brandName?.toLowerCase().replace(/\s+/g, '-') + '/\n');
+    console.log('📁 Outputs saved in: ' + outputDir + '/\n');
     console.log('📄 Deliverables generated:');
-    console.log('  ✅ Brand Audit Report (50-70 pages equivalent)');
-    console.log('  ✅ Competitive Landscape Analysis (10-15 competitors)');
-    console.log('  ✅ Brand Strategy Document (30-40 pages equivalent)');
-    console.log('  ✅ Customer Personas (3-4 detailed profiles)');
-    console.log('  ✅ Brand Architecture & Positioning\n');
+    console.log('  ✅ Part 1: Brand Discovery with verified data');
+    console.log('    - Company information (from ' + (brandConfig.companyProfile?.website || 'config') + ')');
+    console.log('    - Product catalog with prices (all sourced)');
+    console.log('    - Distribution channel map');
+    console.log('    - Customer feedback');
+    console.log('    - Business metrics\n');
+    console.log('  ✅ Part 2: Brand Strategy');
+    console.log('    - Competitive Landscape Analysis');
+    console.log('    - Brand Positioning & Architecture');
+    console.log('    - Customer Personas');
+    console.log('    - Messaging Framework\n');
+    console.log('  ✅ Data Verification');
+    console.log('    - Quality Score: ' + discoveryReport.verificationLog.averageConfidence + '/100');
+    console.log('    - Total Data Points: ' + discoveryReport.verificationLog.totalDataPoints);
+    console.log('    - Verified: ' + discoveryReport.verificationLog.verified);
+    console.log('    - All data with sources + dates + confidence scores\n');
+    console.log('📊 Reports:');
+    console.log('  - brand-book.md (Complete markdown report)');
+    console.log('  - brand-book.html (Styled HTML version)');
+    console.log('  - DATA-VERIFICATION-LOG.md (Standalone verification log)\n');
 
     if (this.projectDashboard) {
       console.log('📊 Project Dashboard: output/project-dashboard.md\n');

@@ -2,7 +2,7 @@
   "project": {
     "name": "O'Reilly & Sons Brand Transformation",
     "brandName": "O'Reilly & Sons",
-    "startDate": "2025-10-11T05:01:58.219Z",
+    "startDate": "2025-10-11T07:31:20.482Z",
     "totalDuration": "16 weeks",
     "currentPhase": "phase1",
     "overallStatus": "in-progress"
@@ -13,7 +13,7 @@
       "name": "Brand Strategy & Positioning",
       "duration": "3 weeks",
       "status": "in-progress",
-      "startDate": "2025-10-11T05:01:58.220Z",
+      "startDate": "2025-10-11T07:31:20.482Z",
       "endDate": null,
       "deliverables": [
         {
@@ -418,8 +418,8 @@
   },
   "metrics": {
     "timeline": {
-      "plannedStartDate": "2025-10-11T05:01:58.219Z",
-      "actualStartDate": "2025-10-11T05:01:58.219Z",
+      "plannedStartDate": "2025-10-11T07:31:20.482Z",
+      "actualStartDate": "2025-10-11T07:31:20.482Z",
       "plannedEndDate": null,
       "actualEndDate": null,
       "daysElapsed": 0
@@ -438,5 +438,5 @@
       "notStarted": 4
     }
   },
-  "lastUpdated": "2025-10-11T05:01:58.220Z"
+  "lastUpdated": "2025-10-11T07:31:20.482Z"
 }

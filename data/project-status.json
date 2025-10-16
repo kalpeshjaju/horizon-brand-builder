@@ -1,0 +1,675 @@
+{
+  "project": {
+    "name": "Brand Builder Pro Development",
+    "startDate": "2025-10-11T08:03:53.973Z",
+    "totalDuration": "10-12 months",
+    "currentPhase": "phase1",
+    "overallStatus": "in-progress"
+  },
+  "phases": {
+    "phase1": {
+      "number": 1,
+      "name": "Brand Strategy & Positioning",
+      "duration": "6-8 weeks",
+      "status": "in-progress",
+      "startDate": "2025-10-11T08:03:53.974Z",
+      "endDate": null,
+      "deliverables": [
+        {
+          "name": "Brand Audit Report",
+          "status": "in-progress",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Competitive Landscape Analysis",
+          "status": "in-progress",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Customer Perception Study",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Category Trends Report",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Stakeholder Interview Synthesis",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Strategy Document",
+          "status": "in-progress",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Purpose, Vision, Mission",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Positioning Statement",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Personality Framework",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Target Audience Personas",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Architecture",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Pricing Strategy Recommendations",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        }
+      ],
+      "milestones": [],
+      "risks": [],
+      "progress": 0
+    },
+    "phase2": {
+      "number": 2,
+      "name": "Brand Expression & Identity",
+      "duration": "8-10 weeks",
+      "status": "not-started",
+      "startDate": null,
+      "endDate": null,
+      "deliverables": [
+        {
+          "name": "Brand Story",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Tagline and Messages",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Voice Guidelines",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Messaging Framework",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Logo System",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Color Palette",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Typography System",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Photography Style Guide",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Social Media Templates",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Website Design Direction",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Packaging Design System",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Gift Packaging Solutions",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Channel Architecture Strategy",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Size Architecture",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Price Architecture Framework",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        }
+      ],
+      "milestones": [],
+      "risks": [],
+      "progress": 0
+    },
+    "phase3": {
+      "number": 3,
+      "name": "Brand Experience Design",
+      "duration": "12-14 weeks",
+      "status": "not-started",
+      "startDate": null,
+      "endDate": null,
+      "deliverables": [
+        {
+          "name": "Customer Journey Maps",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "CX Improvement Roadmap",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Store Design Concept",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Visual Merchandising Guidelines",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Website UX/UI Recommendations",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Social Media Strategy",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Content Calendar Template",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Influencer Marketing Playbook",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "UGC Strategy & Campaigns",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Content Production Guidelines",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "PDP Templates",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "SEO & Marketplace Optimization",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Review Strategy",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Provenance Story Bible",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Origin Story Development",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        }
+      ],
+      "milestones": [],
+      "risks": [],
+      "progress": 0
+    },
+    "phase4": {
+      "number": 4,
+      "name": "Brand Activation & Launch",
+      "duration": "8-10 weeks",
+      "status": "not-started",
+      "startDate": null,
+      "endDate": null,
+      "deliverables": [
+        {
+          "name": "Brand Launch Plan",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Launch Campaign Concept",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Performance Marketing Strategy",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Community Building Strategy",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "CRM & Lifecycle Framework",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Customer Segmentation Strategy",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Loyalty Program Architecture",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Festive Calendar & Strategy",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Corporate Gifting Catalogue",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "B2B Sales Toolkit",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Retail Brand Standards",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "POSM Kit",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Performance Creative System",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Guidelines Manual",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Governance Policy",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        }
+      ],
+      "milestones": [],
+      "risks": [],
+      "progress": 0
+    },
+    "phase5": {
+      "number": 5,
+      "name": "Implementation Support",
+      "duration": "6-12 months",
+      "status": "not-started",
+      "startDate": null,
+      "endDate": null,
+      "deliverables": [
+        {
+          "name": "Monthly Consultation Calls",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Quarterly Brand Health Reviews",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Innovation Framework",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "NPD Launch Playbook",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Trend Analysis Reports",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Brand Evolution Strategy",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        },
+        {
+          "name": "Crisis Management Protocols",
+          "status": "not-started",
+          "assignee": null,
+          "dueDate": null,
+          "completedDate": null,
+          "notes": [],
+          "dependencies": []
+        }
+      ],
+      "milestones": [],
+      "risks": [],
+      "progress": 0
+    }
+  },
+  "metrics": {
+    "timeline": {
+      "plannedStartDate": "2025-10-11T08:03:53.974Z",
+      "actualStartDate": "2025-10-11T08:03:53.974Z",
+      "plannedEndDate": null,
+      "actualEndDate": null,
+      "daysElapsed": 0
+    },
+    "deliverables": {
+      "total": 64,
+      "completed": 0,
+      "inProgress": 3,
+      "notStarted": 61,
+      "completionRate": 0
+    },
+    "phases": {
+      "total": 5,
+      "completed": 0,
+      "inProgress": 1,
+      "notStarted": 4
+    }
+  },
+  "lastUpdated": "2025-10-11T09:56:57.762Z"
+}

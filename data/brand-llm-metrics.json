@@ -1,0 +1,151 @@
+{
+  "history": [
+    {
+      "llmFeatureId": "brand-market-research",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T07:55:19.624Z",
+          "llmFeatureId": "brand-market-research",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 35598,
+            "avgTokens": 1663,
+            "avgCost": 0.022257,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "brand-strategy-generation",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T07:55:59.672Z",
+          "llmFeatureId": "brand-strategy-generation",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 33027,
+            "avgTokens": 1400,
+            "avgCost": 0.017808,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "brand-audience-research",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T07:57:03.668Z",
+          "llmFeatureId": "brand-audience-research",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 63990,
+            "avgTokens": 6246,
+            "avgCost": 0.052601999999999996,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "adaptive-workflow-general",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T07:57:38.771Z",
+          "llmFeatureId": "adaptive-workflow-general",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 35101,
+            "avgTokens": 1321,
+            "avgCost": 0.018543,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "brand-audit",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T07:59:04.456Z",
+          "llmFeatureId": "brand-audit",
+          "metrics": {
+            "accuracy": 0.7,
+            "precision": 0.7,
+            "recall": 0.7,
+            "f1Score": 0.7,
+            "avgResponseTime": 85681,
+            "avgTokens": 4105,
+            "avgCost": 0.06031500000000001,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "brand-visual-direction",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T07:59:40.365Z",
+          "llmFeatureId": "brand-visual-direction",
+          "metrics": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1Score": 0.8,
+            "avgResponseTime": 35904,
+            "avgTokens": 1356,
+            "avgCost": 0.019116,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    },
+    {
+      "llmFeatureId": "brand-messaging",
+      "metrics": [
+        {
+          "timestamp": "2025-10-11T08:00:11.921Z",
+          "llmFeatureId": "brand-messaging",
+          "metrics": {
+            "accuracy": 0.9,
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1Score": 0.9,
+            "avgResponseTime": 31553,
+            "avgTokens": 1243,
+            "avgCost": 0.017337,
+            "errorRate": 0
+          },
+          "aggregationPeriod": "1h"
+        }
+      ],
+      "alerts": []
+    }
+  ]
+}
